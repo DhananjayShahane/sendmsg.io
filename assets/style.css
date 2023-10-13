@@ -1,3 +1,64 @@
-.add_complate_todo{
-    text-decoration: line-through;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(37, 37, 37);
+}
+
+.form_fildes{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+input{
+    padding: 5px 15px;
+    width: 360px;
+    height: 45px;
+    border-radius: 5px;
+    background: #1c1511;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    opacity: 0.6;
+}
+
+input[type="number"]{
+    color: white;
+    font-size: 20px;
+}
+
+button{
+    outline: none;
+    border: none;
+    background-color: #119334;
+    color: white;
+    width: 200px;
+    height: 60px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+
+.error{
+    color: #e50914;
+}
+
+
+/* responsive */
+
+@media screen and(min-width:48rem) {
+    .form_fildes{
+        display:flex;
+    }
 }

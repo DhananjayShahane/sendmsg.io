@@ -5,17 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
   <script src="./assets/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script src="./assets/jquery-validation.js"></script>
 </head>
 <body>
-   <div class="form_fildes">
-     <input type="text" minlength="10" id="number_input" placeholder="Enter Your Number"  required>
-     <button id="submit">send</button>
-   </div>
-   <div class="number_wrapper">
-     <ol id="number_item">
-        
-     </ol>
-   </div>
+   <main>
+    <section>
+      <form id="form">
+        <div class="form_fildes">
+          <div id="error_wrapper"></div>
+          <input type="number" minlength="10" id="number_input" placeholder="Enter Your Number"  required>
+          <button id="submit">SEND</button>
+        </div>
+      </form>
+    </section>
+   </main>
   <script src="./assets/script.js"></script>
 </body>
 </html>
